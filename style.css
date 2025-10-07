@@ -142,10 +142,12 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, #a3151ab7 60%, #ffd60044 100%),
-              url('hero.jpg') center/cover no-repeat;
-  opacity: 0.4;
+  background:
+    linear-gradient(120deg, rgba(163,21,26,0.65) 60%, rgba(255,214,0,0.18) 100%),
+    url('hero.jpg') center/cover no-repeat;
+  background-blend-mode: overlay;
   z-index: 1;
+  opacity: 1;
 }
 .hero-content {
   position: relative;
