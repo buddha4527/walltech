@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +6,17 @@
   <title>Wall Tech Bricks - Low Cost Green Building Concept</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="logo.png" />
+  <!-- Google Fonts (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
-  <header id="header">
-    <div class="container header-content">
+  <header>
+    <div class="container nav-flex">
       <a href="#" class="logo">
-        <!-- Swap src with your logo -->
         <img src="logo.png" alt="Wall Tech Bricks Logo" />
-        <div>
-          <span>Wall Tech</span> <span class="theme-yellow">Bricks</span>
-        </div>
+        <span>Wall Tech <span class="logo-accent">Bricks</span></span>
       </a>
       <nav>
         <a href="#home">Home</a>
@@ -31,42 +29,47 @@
   </header>
 
   <section id="home" class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <h1>A Low-Cost <span class="theme-yellow">Green Building Concept</span></h1>
+      <h1>A Low-Cost <span class="brand-accent">Green Building Concept</span></h1>
       <p>Eco-friendly, high strength, and cost-effective building solutions.</p>
-      <a href="#contact" class="btn">Contact Us</a>
+      <a href="#contact" class="btn btn-primary">Contact Us</a>
     </div>
   </section>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p class="about-text">
-        Wall Tech Bricks is made under expert supervision using advanced machinery and high-quality raw materials. We provide eco-friendly and affordable building materials that meet international standards.
-      </p>
-      <div class="features">
-        <div class="feature"><i class="fa-solid fa-leaf"></i> Eco-Friendly</div>
-        <div class="feature"><i class="fa-solid fa-indian-rupee-sign"></i> Cost-Effective</div>
-        <div class="feature"><i class="fa-solid fa-certificate"></i> ISO Certified</div>
-        <div class="feature"><i class="fa-solid fa-industry"></i> Modern Technology</div>
+  <section id="about" class="section-reveal">
+    <div class="container about-flex">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          Wall Tech Bricks is made under expert supervision using advanced machinery and high-quality raw materials. We provide eco-friendly and affordable building materials that meet international standards.
+        </p>
+        <div class="feature-icons">
+          <div><i class="fa-solid fa-leaf"></i><span>Eco-Friendly</span></div>
+          <div><i class="fa-solid fa-indian-rupee-sign"></i><span>Cost-Effective</span></div>
+          <div><i class="fa-solid fa-certificate"></i><span>ISO Certified</span></div>
+          <div><i class="fa-solid fa-industry"></i><span>Modern Technology</span></div>
+        </div>
+      </div>
+      <div class="about-img">
+        <img src="hero.jpg" alt="Modern Brick Home" />
       </div>
     </div>
   </section>
 
-  <section id="mission">
-    <div class="container mission-cards">
-      <div class="mission-card">
+  <section id="mission" class="section-reveal">
+    <div class="container vmp-grid">
+      <div class="vmp-card">
         <img src="vision.jpg" alt="Vision" />
         <h3>Vision</h3>
         <p>To pursue excellence in engineering and technical services, minimizing waste at every stage and reducing costs, as per the latest technology trends.</p>
       </div>
-      <div class="mission-card">
+      <div class="vmp-card">
         <img src="mission.jpg" alt="Mission" />
         <h3>Mission</h3>
         <p>To reduce the environmental impact of buildings by using resources efficiently and protecting health. To be renowned for excellence, reliability, and professionalism.</p>
       </div>
-      <div class="mission-card">
+      <div class="vmp-card">
         <img src="quality.jpg" alt="Quality Policy" />
         <h3>Quality Policy</h3>
         <p>We are committed to top quality. We continually improve processes, products, and services, meeting and exceeding customer satisfaction at all times.</p>
@@ -74,7 +77,7 @@
     </div>
   </section>
 
-  <section id="products">
+  <section id="products" class="section-reveal">
     <div class="container">
       <h2>Our Products</h2>
       <div class="products-grid">
@@ -124,11 +127,10 @@
     </div>
   </section>
 
-  <section id="gallery">
+  <section id="gallery" class="section-reveal">
     <div class="container">
       <h2>Gallery</h2>
       <div class="gallery-grid">
-        <!-- Replace src with your gallery images -->
         <img src="gallery1.jpg" alt="Gallery 1" />
         <img src="gallery2.jpg" alt="Gallery 2" />
         <img src="gallery3.jpg" alt="Gallery 3" />
@@ -139,14 +141,14 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section-reveal">
     <div class="container contact-flex">
       <div class="contact-info">
         <h2>Contact Us</h2>
-        <p><i class="fa-solid fa-location-dot"></i> Chemarkattur, Areacode, Malappuram, Kerala</p>
-        <p><i class="fa-solid fa-phone"></i> <a href="tel:+919447353525">+91 9447 35 35 25</a>, <a href="tel:+919544458221">+91 9544 45 82 21</a></p>
-        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:mail@walltechco.com">mail@walltechco.com</a></p>
-        <p><i class="fa-solid fa-globe"></i> <a href="https://walltechco.com" target="_blank">walltechco.com</a></p>
+        <div><i class="fa-solid fa-location-dot"></i> Chemarkattur, Areacode, Malappuram, Kerala</div>
+        <div><i class="fa-solid fa-phone"></i> <a href="tel:+919447353525">+91 9447 35 35 25</a>, <a href="tel:+919544458221">+91 9544 45 82 21</a></div>
+        <div><i class="fa-solid fa-envelope"></i> <a href="mailto:mail@walltechco.com">mail@walltechco.com</a></div>
+        <div><i class="fa-solid fa-globe"></i> <a href="https://walltechco.com" target="_blank">walltechco.com</a></div>
         <div class="social-row">
           <a href="https://wa.me/919447353525" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -184,6 +186,28 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Smooth section reveal on scroll
+    const reveals = document.querySelectorAll('.section-reveal');
+    const revealOnScroll = () => {
+      for (const el of reveals) {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight * 0.92) el.classList.add('revealed');
+      }
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
